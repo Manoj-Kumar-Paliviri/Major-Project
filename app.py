@@ -27,7 +27,7 @@ def run():
     set_bg_hack('background.png')
 run()
 model = joblib.load('Sentiment_Analyzer')
-st.title('Sentiment Analyzer')
+st.title('Sentiment Analyzer of movie reviews')
 input = st.text_input('Enter your review:')
 output = model.predict([input])
 if st.button('Predict'):
