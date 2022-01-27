@@ -25,6 +25,7 @@ def run():
             unsafe_allow_html=True
         )
     set_bg_hack('background.png')
+run()
 model = joblib.load('Sentiment_Analyzer')
 st.title('Sentiment Analyzer')
 input = st.text_input('Enter your review:')
